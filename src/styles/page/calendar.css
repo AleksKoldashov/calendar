@@ -1,0 +1,11 @@
+.calendar {
+    display: grid;
+    background-color: red;
+    grid-template-columns: repeat(7, 150px);
+    grid-template-rows: repeat(5, 100px);
+  }
+  .week{
+    display: grid;
+    background-color: red;
+    grid-template-columns: repeat(7, 150px);
+  }
