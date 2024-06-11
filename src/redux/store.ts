@@ -1,10 +1,10 @@
 import { configureStore } from "@reduxjs/toolkit";
-import questionSlise from "./slice/questionSlise";
+import daySlise from "./slice/daySlise";
 
 
 export const store = configureStore({
     reducer:{
-        question: questionSlise
+        day: daySlise
     },
     middleware:getDefaultMiddleware =>
         getDefaultMiddleware().concat()

@@ -1,11 +1,16 @@
 import React from "react";
 import '../styles/page/auth.css'
 import logo from'../img/page/auth/logo.svg'
+import useInput from "../components/UI/Input/useInput";
+import MyInput from "../components/UI/Input/MyInput";
 
 
 
 export default function Auth(){
-
+const placeholder_email = 'E-mail'
+const placeholder_password = 'Пароль'        
+const inp_email = useInput(true, placeholder_email, 'email')
+const inp_password = useInput(true, placeholder_password, 'password')
 
     return(
         <div className="auth">
@@ -13,18 +18,8 @@ export default function Auth(){
                 <img src={logo} alt="logo"/>
                 <h1>Вход в Sirius Future</h1>
                 <form>
-                <div className="text-field">
-                    <label className="text-field__label"/>
-                    <div className="text-field__icon text-field__icon_email">
-                        <input className="text-field__input" type="email" placeholder="alexander@itchief.ru" value="alexander@itchief.ru"/>
-                    </div>
-                    </div>
-                    <div className="text-field">
-                    <label className="text-field__label"/>
-                    <div className="text-field__icon text-field__icon_search">
-                        <input className="text-field__input" type="text" placeholder="css" value="css уроки"/>
-                    </div>
-                    </div>
+                <MyInput props={inp_email}/>
+                <MyInput props={inp_password}/>
                     <label className="checkbox style-b">
                         <input type="checkbox"/>
                         <div className="checkbox__checkmark"></div>

@@ -31,7 +31,7 @@ function App() {
   const arrSidebar = [
     {id: 1, title: 'Главная', icon: icon_11(), url: '/profil'},
     {id: 2, title: 'Расписание', icon:icon_12(), url:'/calendar'},
-    {id: 3, title: 'Оплата', icon:'icon_3', url:'/calendar'},
+    {id: 3, title: 'Оплата', icon:'icon_3', url:'/payment'},
     {id: 4, title: 'Достижения', icon:'icon_4', url:'/calendar'},
     {id: 5, title: 'Тренажер', icon: 'icon_5', url:'/calendar'},
     {id: 6, title: 'Библиотека', icon: 'icon_6', url:'/calendar'},
@@ -48,7 +48,7 @@ const onCL2=()=>{
   console.log('sdsd');
   setOn("item_menu")
 }
-console.log('sdsd', on);
+
 
   return (
     <div className="app">
@@ -61,7 +61,7 @@ console.log('sdsd', on);
         </div>
         <div className="content_sidebar">
           {
-            arrSidebar.map((item)=><div className='item_menu '  >
+            arrSidebar.map((item)=><div className='item_menu ' key={item.id} >
                 <NavLink to={item.url} className="item">
                   {/* <img src={item.icon}  alt="icon" /> */}
                   {item.icon}

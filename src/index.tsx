@@ -8,6 +8,7 @@ import { Provider } from 'react-redux';
 import { store } from './redux/store';
 import Profil from './page/Profil';
 import Calendar from './page/Calendar';
+import Payment from './page/Payment';
 
 
 const router = createBrowserRouter([
@@ -23,7 +24,11 @@ const router = createBrowserRouter([
     {
       element: <Calendar/>,
       path:'/calendar',
-  }
+  },
+  {
+    element: <Payment/>,
+    path:'/payment',
+}
   ]
   }
 ])

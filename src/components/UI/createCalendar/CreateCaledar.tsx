@@ -1,10 +1,10 @@
 import React, { useEffect, useState } from "react";
 import August from "./August";
-import { log } from "console";
 import February from "./February";
 import Mart from "./Mart";
 import June from "./June";
 import July from "./July";
+
 
 
 
@@ -29,8 +29,12 @@ export function CreateCaledar (){
         }
     }
     const monthDinc=()=>{
-        if(mon.monthId>0)
-        setMon({...mon,monthId: mon.monthId - 1})
+        if(mon.monthId>0&&mon.yaer===yaer){
+            setMon({...mon,monthId: mon.monthId - 1})
+        }else{
+            setMon({yaer: mon.yaer-1 ,monthId: 12 - 1})
+        }
+      
     }
     
     const [data, setData]=useState<any>([])  

@@ -54,6 +54,7 @@ a{
     color: rgba(67, 75, 116, 1);
 }
 .item svg{
+    stroke-width: 1px;
     stroke: rgba(67, 75, 116, 1);
 }
 .item:hover{
@@ -64,6 +65,7 @@ a{
 
 .item svg:hover{
     stroke: white;
+    stroke-width: 1px;
 }
 
 .item_menu img {

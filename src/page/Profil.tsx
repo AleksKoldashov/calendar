@@ -1,15 +1,13 @@
 import React, { useState } from "react";
 import '../styles/page/profil.css'
-import useInput from "../components/UI/useInput";
+import useInput from "../components/UI/Input/useInput";
 
 
 export default function Profil() {
-  const placeholder = 'profil'
-
+const placeholder = 'profil'
 
   return (
     <>
-  
     <div className="profil">
         <div className="block_1"></div>
         <div className="block_2"></div>

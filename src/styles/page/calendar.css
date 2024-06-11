@@ -1,11 +1,48 @@
 .calendar {
     display: grid;
-    background-color: red;
     grid-template-columns: repeat(7, 150px);
     grid-template-rows: repeat(5, 100px);
   }
   .week{
     display: grid;
-    background-color: red;
+    justify-items: end;
     grid-template-columns: repeat(7, 150px);
   }
+
+  .btn_update{
+    width: 344px;
+    height: 40px;
+    background-color: rgba(222, 207, 255, 1);
+    border-radius: 30px;
+    color:rgba(50, 56, 84, 1);
+    border: none;
+  }
+.schedule{
+  width: 1150px;
+  display: flex;
+  justify-content: space-between;
+}
+.btn_month_dic{
+  width: 24px;
+  height: 24px;
+  background-image: url("../../img/UI/arrowLeft.svg");
+  border: none;
+  margin-right: 15px;
+}
+.btn_month_inc{
+  width: 24px;
+  height: 24px;
+  background-image: url("../../img/UI/arrowRidth.svg");
+  border: none;
+  margin-left: 15px;
+}
+
+.data{
+  display: flex;
+  width: 240px;
+  height: 24px;
+  align-items: center;
+  justify-content: center;
+  justify-content: flex-start;
+}
+

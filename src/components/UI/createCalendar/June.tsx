@@ -5,11 +5,6 @@ import { iAUg } from "./August";
 
 export default function June (props:iAUg){
 
-
-console.log(props);
-
-
-
 const day1_week = new Date(props.yaer,props.monthId,1).getDay()
 
 const num = 31
