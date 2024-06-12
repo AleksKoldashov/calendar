@@ -10,12 +10,13 @@ interface iMySelect {
 
 export default function useSelect():any{
   
-    const [value, setValue]=useState()
+    const [value, setValue]=useState(null)
 
   
     return {
         defaultValue:'DEFAULT',
         onChange: (e:any) => setValue(e.target.value),
-        value
+        value, 
+        onCh: ()=>{setValue(value)}
     }
 }

@@ -3,15 +3,17 @@ import '../styles/page/calendar.css'
 import { CreateCaledar } from "../components/UI/createCalendar/CreateCaledar";
 import  ItemDay  from "../components/ItemDay";
 import useSelect from "../components/UI/Select/useSelect";
-import { useAppSelector } from "../redux/hooks/hooks";
+import { useAppDispatch, useAppSelector } from "../redux/hooks/hooks";
 import MySelect from "../components/UI/Select/MySelect";
 import MyButton from "../components/UI/Button/MyButton";
 import useButton from "../components/UI/Button/useButton";
+import { update_lesson } from "../redux/slice/daySlise";
 
 
 interface iSel {
   value: string;
-  onChange: ()=>string
+  onChange: ()=>string,
+  onCl: ()=>void,
 }
 
 // interface iLesson{
@@ -25,21 +27,25 @@ interface iSel {
 export default function Calendar() {
 
 const day = useAppSelector(state=>state.day.day)
-
+const dispatch = useAppDispatch()
 const week = ["Пн", "Вт", "Ср", "Чт", "Пт", "Сб", "Вс"]
 
 const {mon, data, monthInc, monthDinc,nowMonth} = CreateCaledar()
 const sel:iSel = useSelect()
 
+const [lesson,setLesson]=useState<any >()
 
-
-const [lesson,setLesson]=useState<any >([])
-
+// цикл добавления поля lesson
+// for(let i=0; i<data.length;i++){
+//   data[i]['lesson'] = []
+//  }
+console.log(  sel);
 
 const add=()=>{
-  console.log(lesson);
-  if(sel.value!==undefined&&day!==0)
-  setLesson([...lesson,{a: sel.value, id: day}])
+  if(sel.value!==null&&day!==0){
+  dispatch(update_lesson({id: day, title:sel.value}))
+  }
+
 }
 
 const btn_schedule = useButton(add)
@@ -65,7 +71,7 @@ return (
     </div>
     <div className="calendar">
        {
-        data?.map((item:any, index:any)=><ItemDay item={item} lesson={lesson} key={index}/>)
+        data?.map((item:any, index:any)=><ItemDay item={item} key={item.id}/>)
        }
     </div>
     </>
