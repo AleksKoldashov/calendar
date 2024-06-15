@@ -1,3 +1,6 @@
+export const NUM_34 = 34
+export const NUM_33 = 33
+export const NUM_32 = 32
 export const NUM_31 = 31
 export const NUM_30 = 30
 export const NUM_29 = 29
@@ -5,3 +8,10 @@ export const NUM_28 = 28
 export const NUM_27 = 27
 export const NUM_26 = 26
 export const NUM_25 = 25
+export const NUM_1 = 1
+export const NUM_2 = 2
+export const NUM_3 = 3
+export const NUM_4 = 4
+export const NUM_5 = 5
+export const NUM_6 = 6
+export const NUM_7 = 7

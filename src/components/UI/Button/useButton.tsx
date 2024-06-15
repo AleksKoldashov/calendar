@@ -8,5 +8,6 @@ export default function useButton (props:any){
 
     return {
         onClick: ()=>{props()},
+  
     }
 }

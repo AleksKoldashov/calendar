@@ -9,6 +9,8 @@ import { store } from './redux/store';
 import Profil from './page/Profil';
 import Calendar from './page/Calendar';
 import Payment from './page/Payment';
+import Auth from './page/Auth';
+import MyModal from './components/UI/Modal/MyModal';
 
 
 const router = createBrowserRouter([
@@ -26,7 +28,7 @@ const router = createBrowserRouter([
       path:'/calendar',
   },
   {
-    element: <Payment/>,
+    element: <Auth/>,
     path:'/payment',
 }
   ]

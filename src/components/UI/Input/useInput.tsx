@@ -1,5 +1,5 @@
 import { useState } from "react"
-import './styles/useinput.css'
+
 interface iInput {
     required:boolean;
     placeholder: string;

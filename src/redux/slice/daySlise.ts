@@ -19,7 +19,6 @@ reducers:{
         state.day = action.payload
     },
     update_lesson: (state, action)=>{
-       console.log(action.payload);
        state.less=[...state.less,action.payload]
     },
   

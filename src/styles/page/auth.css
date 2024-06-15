@@ -1,28 +1,28 @@
 /* Инпуты */
-input[type="email"] {
-  font-family: inherit; /* 1 */
-  font-size: inherit; /* 1 */
-  line-height: inherit; /* 1 */
-  margin: 0; /* 2 */
+/* input[type="email"] {
+  font-family: inherit; 
+  font-size: inherit; 
+  line-height: inherit;
+  margin: 0; 
 }
 input[type="password"] {
-  font-family: inherit; /* 1 */
-  font-size: inherit; /* 1 */
-  line-height: inherit; /* 1 */
-  margin: 0; /* 2 */
-}
+  font-family: inherit; 
+  font-size: inherit; 
+  line-height: inherit; 
+  margin: 0;
+} */
 
 
-.text-field {
+/* .text-field {
   margin-bottom: 1rem;
-}
+} */
 /* стили для label */
-.text-field__label {
+/* .text-field__label {
   display: block;
   margin-bottom: 0.25rem;
-}
+} */
 /* стили для input */
-.text-field__input {
+/* .text-field__input {
   display: block;
   width: 100%;
   height: calc(2.25rem + 2px);
@@ -32,9 +32,9 @@ input[type="password"] {
   font-weight: 400;
   line-height: 1.5;
   color: #212529;
-  background-color: #fff;
+  background-color: #fff; */
   /* background-clip: padding-box; */
-  border: 1px solid #bdbdbd;
+  /* border: 1px solid #bdbdbd;
   border-radius: 8px;
   transition: border-color 0.15s ease-in-out, box-shadow 0.15s ease-in-out;
 }
@@ -62,67 +62,9 @@ input[type="password"] {
   background-image: url("../../img/page/auth/icon_pass.svg");
   background-repeat: no-repeat;
   background-position: center;
-}
+} */
 
-/* Чекбокс */
-.checkbox.style-b {
-    display: inline-block;
-    position: relative;
-    padding-left: 30px;
-    cursor: pointer;
-    -webkit-user-select: none;
-    -moz-user-select: none;
-    -ms-user-select: none;
-    user-select: none;
-  }
-  .checkbox.style-b input {
-    position: absolute;
-    opacity: 0;
-    cursor: pointer;
-    height: 0;
-    width: 0;
-  }
-  .checkbox.style-b input:checked ~ .checkbox__checkmark {
-    background-color: #fff;
-  }
-  .checkbox.style-b input:checked ~ .checkbox__checkmark:after {
-    opacity: 1;
-  }
-  .checkbox.style-b:hover input ~ .checkbox__checkmark {
-    background-color: #eee;
-  }
-  .checkbox.style-b:hover input:checked ~ .checkbox__checkmark {
-    background-color: #fff;
-  }
-  .checkbox.style-b .checkbox__checkmark {
-    position: absolute;
-    top: 3px;
-    left: 5px;
-    height: 18px;
-    width: 18px;
-    background-color: #fff;
-    border: 1px solid #bdbdbd;
-    transition: background-color 0.25s ease;
-    border-radius: 4px;
-  }
-  .checkbox.style-b .checkbox__checkmark:after {
-    content: "";
-    position: absolute;
-    left: 5px;
-    top: 1px;
-    width: 5px;
-    height: 10px;
-    border: solid #333;
-    border-width: 0 2px 2px 0;
-    transform: rotate(45deg);
-    opacity: 0;
-    transition: opacity 0.25s ease;
-  }
-  .checkbox.style-b .checkbox__body {
-    color: rgba(121, 116, 127, 1);
-    font-size: 12px;
-    padding: 4px;
-  }
+
 /* Остальное */
 
 .btn_auth{
@@ -131,7 +73,6 @@ input[type="password"] {
     color: white;
     width: 340px;
     height: 48px;
-    margin-top: 40px;
 }
 .block_1{
     size: 16px;

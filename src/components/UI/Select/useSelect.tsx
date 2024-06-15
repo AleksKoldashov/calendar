@@ -8,15 +8,14 @@ interface iMySelect {
  }
 }
 
-export default function useSelect():any{
+export default function useSelect(props?:any):any{
   
     const [value, setValue]=useState(null)
-
   
     return {
         defaultValue:'DEFAULT',
         onChange: (e:any) => setValue(e.target.value),
         value, 
-        onCh: ()=>{setValue(value)}
+        onClick: ()=>props.onClick()
     }
 }
